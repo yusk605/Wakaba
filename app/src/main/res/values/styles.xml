@@ -1,0 +1,29 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Gnt.RatingBar.Small" parent="Widget.AppCompat.RatingBar.Small">
+            <!-- The color applied to framework controls in their normal state. -->
+            <item name="colorControlNormal">#d6d7d8</item>
+
+            <!-- The color applied to framework controls in their activated (ex. checked) state. -->
+            <item name="colorControlActivated">#683FAF</item>
+
+            <!-- Default disabled alpha for widgets that set enabled/disabled alpha programmatically. -->
+            <item name="android:disabledAlpha">1.0</item>
+    </style>
+    <style name="Gnt.RatingBar.Nom" parent="Widget.AppCompat.RatingBar.Indicator">
+        <!-- The color applied to framework controls in their normal state. -->
+        <item name="colorControlNormal">#d6d7d8</item>
+
+        <!-- The color applied to framework controls in their activated (ex. checked) state. -->
+        <item name="colorControlActivated">#F8588F</item>
+
+        <!-- Default disabled alpha for widgets that set enabled/disabled alpha programmatically. -->
+        <item name="android:disabledAlpha">1.0</item>
+    </style>
+</resources>

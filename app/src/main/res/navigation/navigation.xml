@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/wakabaListFragment">
+
+    <fragment
+        android:id="@+id/wakabaListFragment"
+        android:name="com.example.wakaba.fragment.WakabaListFragment"
+        android:label="fragment_wakaba_list"
+        tools:layout="@layout/fragment_wakaba_list" >
+        <action
+            android:id="@+id/action_wakabaListFragment_to_contentFragment"
+            app:destination="@id/contentFragment" />
+        <argument
+            android:name="check"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.example.wakaba.fragment.ContentFragment"
+        android:label="fragment_content"
+        tools:layout="@layout/fragment_content" >
+        <argument
+            android:name="bean"
+            app:argType="com.example.wakaba.room.Wakaba" />
+        <action
+            android:id="@+id/action_contentFragment_to_wakabaListFragment"
+            app:destination="@id/wakabaListFragment" />
+    </fragment>
+</navigation>
